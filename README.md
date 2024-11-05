@@ -4,15 +4,15 @@
 * Terraform is an open-source infrastructure as code (IaC) tool developed by HashiCorp. It enables us to define and manage infrastructure resources such as virtual machines, networking components, and storage entities across various cloud providers like AWS, Azure, Google Cloud Platform, and others. With Terraform, you describe your desired infrastructure in configuration files (often written in HashiCorp Configuration Language, or HCL), and Terraform handles the provisioning and management of those resources.
 
 ### Terraform advantages :
-* 1.Open source:It is a open source, it supports hybrid cloud. We depoly infra across various cloud platfroms.
-2.Reuse: We can reuse the configuration. Using the same configuration for an infrastructure we can create multiple environments.
-3.Cost: Creation and deletion of takes less time. so when ever Infra not required we delete when required we can create it in less time.
-4.Dependicies: Dependicies would resolved automatically while CRUD.
-5.State management:Users can easily roll back to the previous configuration. Because, all the configurations in terraform are version controlled and the state is managed.
-6.Versions:Since it is a code we can maintain different version of our code
+1. Open source:It is a open source, it supports hybrid cloud. We depoly infra across various cloud platfroms.
+2. Reuse: We can reuse the configuration. Using the same configuration for an infrastructure we can create multiple environments.
+3. Cost: Creation and deletion of takes less time. so when ever Infra not required we delete when required we can create it in less time.
+4. Dependicies: Dependicies would resolved automatically while CRUD.
+5. State management:Users can easily roll back to the previous configuration. Because, all the configurations in terraform are version controlled and the state is managed.
+6. Versions:Since it is a code we can maintain different version of our code
 
 ### Terraform Commands :
-* 1. terraform init: Initializes your Terraform configuration directory. It prepares the environment by downloading necessary plugins and modules defined in your configuration files.
+1. terraform init: Initializes your Terraform configuration directory. It prepares the environment by downloading necessary plugins and modules defined in your configuration files.
 2. terraform plan: Provides the Blueprint on your Terraform configuration files. It shows you what actions Terraform will take when you apply your configuration (e.g., create, update, delte resources).
 3. terraform apply: Resources will be created or updated according to our Terraform configuration files.
 4. terraform destroy: Destroys all resources managed by Terraform in your current configuration. It removes everything that Terraform previously created, helping you to clean up resources when they are no longer needed.
