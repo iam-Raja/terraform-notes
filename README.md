@@ -88,7 +88,7 @@ For this we need connection block.
 By following these practices, you can protect sensitive information and minimize the risk of exposing secrets unintentionally
 
 ### Terraform best practises :
-* - Never Hardcode secrets in your Terraform code
+* Never Hardcode secrets in your Terraform code
 - Do not repeat resourcetype in resourcename
 - Resources,variables,outputs these are releated to terraform we can use (_) to separate words.
 - User names can have (-) to separate words.
