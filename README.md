@@ -95,5 +95,3 @@ By following these practices, you can protect sensitive information and minimize
 - tagging startegy
 - use name main.tf if it is only one resource
 
-### :
-*
