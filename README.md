@@ -29,6 +29,15 @@ The state file is used by Terraform to:
 4. Manage dependencies between resources
 The state file is typically named "terraform.tfstate" and is stored in the working directory where Terraform is run.
 
+### What will you do if you lose access to that private instance or lose the PEM file :
+* If I lose access to an EC2 instance due to the lost PEM file, I would follow these steps:
+1.	Stop the EC2 instance: I would stop the instance that I cannot access.
+2.	Unmount the volume: I would unmount the volume from that EC2 instance.
+3.	Attach the volume to another EC2 instance: I would attach this volume to another EC2 instance where I have access.
+4.	Modify the authorized keys: After logging into the accessible EC2 instance, I would navigate to the appropriate directory (usually ~/.ssh/) and modify the authorized_keys file to include my new public key.
+5.	Reattach the volume: I would then unmount the volume from the accessible instance and reattach it to the original EC2 instance.
+6.	Log in using the new PEM file: Finally, I would be able to log in to the original EC2 instance using the new PEM file
+
 ### Remote-state in terraform :
 * Saving state file locally is not recommended in terrafrom.Because in a collebrative environment multiple persons working on the smae infra, so there is a high possibility of duplication and errors if we save state locally.
 Terraform recommends storing the state file in centralised location, accessible by the entire team and it should be locked so that multiple persons can't do the changes in infrastructure at a time.
