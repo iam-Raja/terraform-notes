@@ -38,6 +38,9 @@ The state file is typically named "terraform.tfstate" and is stored in the worki
 5.	Reattach the volume: I would then unmount the volume from the accessible instance and reattach it to the original EC2 instance.
 6.	Log in using the new PEM file: Finally, I would be able to log in to the original EC2 instance using the new PEM file
 
+### How do we import resources that have been manually created into Terraform managemen:
+* To import resources that have been manually created into Terraform management, we need to create the respective Terraform configuration files first. Then, we can import them using the terraform import <resource_type> <resource_id> command
+
 ### Remote-state in terraform :
 * Saving state file locally is not recommended in terrafrom.Because in a collebrative environment multiple persons working on the smae infra, so there is a high possibility of duplication and errors if we save state locally.
 Terraform recommends storing the state file in centralised location, accessible by the entire team and it should be locked so that multiple persons can't do the changes in infrastructure at a time.
